@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+*{
+  margin: 0;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +40,139 @@
     transform: rotate(360deg);
   }
 }
+
+.page-title, .page-dropdown, .products-data-table, .page-change-btn-wrappe{
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.products-data-table{
+  width: 1000px;
+  height: 325px;
+  overflow-y: auto;
+  background-color: aliceblue;
+  color: #666666;
+  padding: 5px;
+}
+
+
+th{
+  cursor: pointer;
+  /* border: 1px solid red; */
+  padding-left: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  /* border-radius: 8px; */
+  background-color: #4e8999;
+  color: #282c34;
+
+}
+
+th.ascending::after {
+  content: " ▲";
+}
+
+th.descending::after {
+  content: " ▼";
+}
+
+tr{
+  border: 1px solid green;
+}
+
+table{
+  width: 100%;
+}
+
+
+.title{
+  width: 40%;
+}
+
+.brand{
+  width: 30%;
+}
+
+.category,.price{
+  width: 15%;
+}
+
+td {
+  font-size: 18px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.category{
+  
+}
+
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 10px; 
+}
+
+.page-change-btn-wrapper{
+  display: flex;
+
+  justify-content: space-between;
+}
+
+span{
+  font-size: 16px;
+}
+
+button {
+  background-color: #2570c1; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  font-size: 16px; 
+  font-weight: bold; 
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #488ad1; 
+}
+
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+select{
+
+  appearance: none; 
+  background-color: #2570c1;
+  width: 60px;
+  text-align: center;
+  margin-left: 10px;
+  color: white;
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%204%205%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M2%205L0%201h4L2%205z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  padding-right: 20px; 
+  
+}
+
